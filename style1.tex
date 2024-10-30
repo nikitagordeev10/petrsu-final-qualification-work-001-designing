@@ -1,0 +1,34 @@
+\makeatletter
+\pagestyle{myheadings}
+\makeatletter
+\renewcommand\@biblabel[1]{#1.}
+\makeatother
+
+\newcommand{\myrule}[1]{\rule{#1}{0.4pt}}
+\newcommand{\sign}[2][~]{{\small\myrule{#2}\\[-0.7em]\makebox[#2]{\it #1}}}
+
+\renewcommand{\labelenumii}{\arabic{enumii})}
+
+\textheight=25.9cm
+\topskip=1cm
+\textwidth=15.5cm
+%\oddsidemargin=-0.46cm
+\voffset=-25mm
+%\voffset=-20mm
+\hoffset=-10mm
+
+\sloppy
+
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+
+\input title.tex
+
+\newpage
+
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\pagestyle{plain}
